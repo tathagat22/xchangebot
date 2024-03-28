@@ -1,5 +1,6 @@
+require('dotenv').config(); // Load environment variables from .env file
 const { Telegraf } = require("telegraf");
-const TOKEN = "7161253302:AAHdXbMAtG0NOEVNbHROwaiXhh_oSj2jeck";
+const TOKEN = process.env.TOKEN; // Access token from environment variable
 const bot = new Telegraf(TOKEN);
 
 const web_link = "https://leafy-gecko-3a332d.netlify.app/";
